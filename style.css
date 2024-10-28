@@ -45,6 +45,7 @@ li{
 section {
     width: 90vw;
     height: 90vh;
+    scroll-snap-type: y mandatory;
     position: relative;
     margin-left: 50px;            /* 왼쪽 여백*/
     margin-top: 100px;
