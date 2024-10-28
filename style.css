@@ -90,7 +90,7 @@ section {
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin-bottom: 300px;
+    margin: 0;
 }
 
 .svg-con svg[class^="ov-"] {
