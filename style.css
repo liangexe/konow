@@ -53,6 +53,22 @@ section {
     */ 
 }
 
+.svg-con {
+    position: relative;
+    float: right;
+    width: 800px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.svg-con svg[class^="ov-"] {
+    position: absolute;
+    transition: transform 0.015s linear;
+}
+
 .section-container{
 
 }
