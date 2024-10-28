@@ -82,9 +82,30 @@ section {
     color: #2C2C2C;
 }
 
-.bg-art2{
+#sec3 {
+    position: relative;
+    min-height: 100vh; /* 최소 화면 높이만큼 확보 */
+    padding-top: 50px;
+    padding-bottom: 200px;
+    overflow: hidden; 
+}
+
+.bg-art1, .bg-art2 {
+    position: relative; /* 위치 설정을 위해 */
+}
+
+.bg-art2 {
     margin-top: 100px;
     text-align: center;
+    bottom: 0; /* 섹션3의 하단에 위치하도록 */
+}
+
+/* SVG 위치 조정 */
+#sec3 svg {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: calc(100vh - 500px); /* 전체 높이에서 여유 공간 확보 */
 }
 
 .svg-con {
