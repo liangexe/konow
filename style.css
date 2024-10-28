@@ -83,6 +83,7 @@ section {
 }
 
 .bg-art2{
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -116,6 +117,27 @@ section {
     color: transparent;             /* 텍스트 색을 투명하게 해서 그라데이션이 보이게 함 */
     font-weight: bolder;
     font-size: 100px
+}
+
+/* sec3의 bg_svg_container 애니메이션 부분 */
+.bg_svg_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: up 1s ease-out forwards;
+}
+
+@keyframes up {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /* sec3의 bg_svg 애니메이션 부분 */
