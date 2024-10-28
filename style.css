@@ -3,7 +3,9 @@
     padding: 0;
     top: 0;
     left: 0;
+    font-family: 'Pretendard', sans-serif;
 }
+
 
 header {
     position: fixed;
@@ -44,34 +46,43 @@ section {
     width: 90vw;
     height: 90vh;
     position: relative;
+    margin-left: 50px;            /* 왼쪽 여백*/
+    margin-top: 100px;
     margin: 20px;
-    background-color: gray;
-    top: 2200px;
+    border: solid 1px #9B9B9B;
+    top: 2215px;
     /*
     top: 2215px;은 sec1이 header까지 닿는 부분까지 내려 제작되는 부분을 확인 할 수 있도록 임시로 넣어둔 부분입니다.
     당장 제작하는 중에는 넣어둔 채로 모든 섹션을 작업하고 이후에는 빼고 다른 방법을 찾아보는 것도 좋을 것 같아용
     */ 
 }
 
-.svg-con {
-    position: relative;
-    float: right;
-    width: 800px;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
+#plan-sec{
+    margin-top: 30px;    
 }
 
-.svg-con svg[class^="ov-"] {
-    position: absolute;
-    transition: transform 0.015s linear;
+#plan-sec h3{
+    font-size: 20px;
+    margin-left: 50px;    
+    margin-top: 100px;
+    margin-bottom: 35px;
 }
 
-.section-container{
-
+#plan-sec h2{
+    color: #FF577C;
+    font-size: 30px; 
+    margin-left: 50px;  
+    margin-bottom: 20px; 
 }
+
+#plan-sec pre{
+    font-size: 13px;
+    margin-left: 50px;  
+    margin-bottom: 20px;
+    color: #2C2C2C;
+}
+
+
 
 .main{
     display: flex;
@@ -90,7 +101,7 @@ section {
     background-clip: text;         
     color: transparent;             /* 텍스트 색을 투명하게 해서 그라데이션이 보이게 함 */
     font-weight: bolder;
-    font-size: 60px
+    font-size: 100px
 }
 
 /* sec3의 bg_svg 애니메이션 부분 */
