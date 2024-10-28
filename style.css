@@ -38,13 +38,13 @@ li{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
 }
 
 section {
     width: 90vw;
     height: 90vh;
-    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
     position: relative;
     margin-left: 50px;            /* 왼쪽 여백*/
     margin-top: 100px;
