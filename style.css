@@ -104,13 +104,4 @@ section {
     font-size: 100px
 }
 
-/* sec3의 bg_svg 애니메이션 부분 */
-.bg_svg.show {
-    clip-path: inset(0 0 100% 0);
-    animation: show 1s ease-out forwards;
-}
 
-@keyframes show {
-    0% { clip-path: inset(0 0 100% 0); }
-    100% { clip-path: inset(0 0 0 0); }
-}
