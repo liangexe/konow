@@ -121,13 +121,16 @@ section {
 }
 
 /* sec3의 bg_svg_container 애니메이션 부분 */
+.bg_container_box.up {
+    transform: translateY(50px);
+    opacity: 0;
+    animation: up 1s ease-out forwards;
+}
+
 .bg_svg_container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    transform: translateY(50px);
-    opacity: 0;
-    animation: up 1s ease-out forwards;
 }
 
 @keyframes up {
