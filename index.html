@@ -66,8 +66,25 @@
         }
 
         .main{
-
+            display: flex;
+            justify-content: flex-start;  /* 중앙(center)에서 왼쪽(flex-start)으로 변경 */
+            align-items: flex-start;      /* 중앙->왼 수직 정렬 */
+            height: 100vh;
         }
+        .m-art {
+            /* flex 컨테이너 내에서 추가 조정 */
+            margin-left: 50px;            /* 왼쪽 여백*/
+            margin-top: 100px;            /* 위쪽 여백 조정 */
+        }
+        .m-art h1 {
+            background: linear-gradient(to right, #FF577C, #66B8FB);
+            -webkit-background-clip: text; 
+            background-clip: text;         
+            color: transparent;             /* 텍스트 색을 투명하게 해서 그라데이션이 보이게 함 */
+            font-weight: bolder;
+            font-size: 60px
+        }
+        /*그에 따른 css 나머지는 아직 수정중..*/
 
     </style>
 
@@ -89,15 +106,16 @@
     <section id="sec1">
         <div class="main">
             <article class="m-art">
-                <pre>
-                    짧게 보고 바로 써먹는 한국어
+                <p>
+                    짧게 보고 바로 써먹는 한국어<br>
                     KOREAN KNOW NOW!
-                </pre>
-                <h1> KONOW </h1>
+                </p>
+                <h1 style="font-weight: bolder; "> KONOW </h1>
             </article>
+            <svg class="m-svg" src=""></svg>
         </div>
     </section>
-
+        /* html 조금 고쳣구여 글씨색이랑 위치조정 햇슴다 */
     <section id="sec2">
         <div class="overview">
             <h3> OVERVIEW </h3>
