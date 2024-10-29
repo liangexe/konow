@@ -151,6 +151,8 @@ section {
     display: flex;
     justify-content: center;
     gap: 20px;
+    width: 1000px;
+    margin: auto;
 }
 
 @keyframes up {
