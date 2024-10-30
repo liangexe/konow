@@ -35,7 +35,8 @@ li{
     margin: 0 auto;
     justify-content: center;
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
+    top: 17350px;
     left: 50%;
     transform: translate(-50%, -50%);
     scroll-snap-type: y mandatory;
