@@ -43,42 +43,52 @@ li{
 
 section {
     width: 90vw;
-    /*height: 90vh;*/
     scroll-snap-align: start;
     position: relative;
     margin-left: 50px;            /* 왼쪽 여백*/
     margin-top: 100px;
     margin: 20px;
     border: solid 1px #9B9B9B;
-    top: 2215px;
+    top: 4000px;
     /*
     top: 2215px;은 sec1이 header까지 닿는 부분까지 내려 제작되는 부분을 확인 할 수 있도록 임시로 넣어둔 부분입니다.
     당장 제작하는 중에는 넣어둔 채로 모든 섹션을 작업하고 이후에는 빼고 다른 방법을 찾아보는 것도 좋을 것 같아용
-    */ 
+    */
 }
 
 #plan-sec{
-    margin-top: 30px;    
+    margin-top: 30px;
 }
 
-#plan-sec h3{
+.p1{
     font-size: 24px;
-    margin-left: 50px;    
+    font-weight: 700;
+    margin-left: 50px;
     margin-top: 100px;
     margin-bottom: 35px;
+    color: #5a5a5a;
 }
 
-#plan-sec h2{
+.p2{
     color: #FF577C;
-    font-size: 50px; 
-    margin-left: 50px;  
-    margin-bottom: 20px; 
+    font-weight: 500;
+    font-size: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.p3{
+    color: #FF577C;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
 #plan-sec pre{
     font-size: 20px;
-    margin-left: 50px;  
+    margin-left: 50px;
     margin-bottom: 20px;
+    line-height: 1.6rem;
     color: #2C2C2C;
 }
 
@@ -87,7 +97,7 @@ section {
     min-height: 100vh; /* 최소 화면 높이만큼 확보 */
     padding-top: 50px;
     padding-bottom: 200px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .bg-art1, .bg-art2 {
@@ -133,8 +143,8 @@ section {
 }
 .m-art h1 {
     background: linear-gradient(to right, #FF577C, #66B8FB);
-    -webkit-background-clip: text; 
-    background-clip: text;         
+    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;             /* 텍스트 색을 투명하게 해서 그라데이션이 보이게 함 */
     font-weight: bolder;
     font-size: 100px
@@ -175,4 +185,14 @@ section {
 @keyframes show {
     0% { clip-path: inset(0 0 100% 0); }
     100% { clip-path: inset(0 0 0 0); }
+}
+
+.user-art1{
+    display: flex;
+    align-content: space-between;
+}
+
+.user-art2{
+    display: flex;
+    align-content: space-between;
 }
