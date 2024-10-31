@@ -32,7 +32,7 @@ li{
 }
 
 #wrap{
-    margin: 0 auto;
+    margin-top: 50px;
     justify-content: center;
     position: absolute;
     left: 50%;
@@ -46,8 +46,20 @@ section {
     border: solid 1px #9B9B9B;
 }
 
+#sec1{
+    height: 840px;
+}
+
+#sec2{
+    height: 840px;
+}
+
+#sec3{
+    height: 1400px;
+}
+
 #plan-sec{
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 
 .p1{
