@@ -35,26 +35,15 @@ li{
     margin: 0 auto;
     justify-content: center;
     position: absolute;
-    /* top: 50%; */
-    top: 10200px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    scroll-snap-type: y mandatory;
+    transform: translateX(-50%);
 }
 
 section {
     width: 90vw;
-    scroll-snap-align: start;
     position: relative;
-    margin-left: 50px;            /* 왼쪽 여백*/
-    margin-top: 100px;
     margin: 20px;
     border: solid 1px #9B9B9B;
-    top: 4000px;
-    /*
-    top: 2215px;은 sec1이 header까지 닿는 부분까지 내려 제작되는 부분을 확인 할 수 있도록 임시로 넣어둔 부분입니다.
-    당장 제작하는 중에는 넣어둔 채로 모든 섹션을 작업하고 이후에는 빼고 다른 방법을 찾아보는 것도 좋을 것 같아용
-    */
 }
 
 #plan-sec{
@@ -119,17 +108,17 @@ section {
     height: calc(100vh - 500px); /* 전체 높이에서 여유 공간 확보 */
 }
 
-.svg-con {
-    width: 800px;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-}
+/*.svg-con {*/
+/*    width: 800px;*/
+/*    height: 700px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
-.svg-con svg[class^="ov-"] {
-    position: absolute;
-    transition: transform 0.015s linear;
-}
+/*.svg-con svg[class^="ov-"] {*/
+/*    position: absolute;*/
+/*    transition: transform 0.015s linear;*/
+/*}*/
 
 .main{
     display: flex;
