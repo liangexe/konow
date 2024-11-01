@@ -76,8 +76,6 @@ li{
     margin-top: 50px;
     justify-content: center;
     position: absolute;
-    left: 20%;
-    transform: translateX(-50%);
 }
 
 section {
@@ -317,19 +315,19 @@ section {
 @keyframes drop5 {
     0% {
         transform:
-            translateY(300px)
-            rotate(-15deg);
+                translateY(300px)
+                rotate(-15deg);
     }
     80% {
         transform:
-            translateY(630px)
-            rotate(10deg);
+                translateY(630px)
+                rotate(10deg);
 
     }
     100% {
         transform:
-            translateY(650px)
-            rotate(0deg);
+                translateY(650px)
+                rotate(0deg);
 
     }
 }
@@ -681,7 +679,7 @@ pre {
     display: block;
     max-width: 100%;
     height: auto;
-   }
+}
 .s13-svg2{
     float: right;
     position: absolute;
