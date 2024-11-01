@@ -6,6 +6,20 @@
     font-family: 'Pretendard', sans-serif;
 }
 
+#wrap{
+    width: 100vw;
+    margin-top: 50px;
+    justify-content: center;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+    width: 100vw;
+    /*border: solid 1px #9B9B9B;*/
+}
+
 body{
     overflow-x: hidden;
 }
@@ -24,10 +38,10 @@ header {
     z-index: 1000;
 }
 
+
 .h-svg{
     margin-left: 70px;
 }
-
 
 ul{
     display: flex;
@@ -43,7 +57,7 @@ li{
 
 .main-title {
     position: absolute;
-    left: 3%;
+    left: 5%;
     font-size: 140px;
     font-weight: 600;
     line-height: 1.0;
@@ -55,7 +69,7 @@ li{
 
 .main-text{
     position: absolute;
-    left: 3.5%;
+    left: 2.5%;
     top: 38%;
     font-size: 22px;
     line-height: 1.4;
@@ -69,20 +83,6 @@ li{
     top: 5%;
     overflow: hidden;
     width: 67%;
-}
-
-#wrap{
-    width: 100vw;
-    margin-top: 50px;
-    justify-content: center;
-    position: absolute;
-}
-
-section {
-    width: 95vw;
-    position: relative;
-    margin: 20px;
-    /*border: solid 1px #9B9B9B;*/
 }
 
 #sec1{
@@ -105,7 +105,7 @@ section {
 .p1{
     font-size: 24px;
     font-weight: 700;
-    margin-left: 50px;
+    margin-left: 70px;
     margin-top: 100px;
     margin-bottom: 35px;
     color: #5a5a5a;
@@ -114,8 +114,8 @@ section {
 .p2{
     color: #FF577C;
     font-weight: 500;
-    font-size: 50px;
-    margin-left: 50px;
+    font-size: 40px;
+    margin-left: 70px;
     margin-bottom: 20px;
 }
 
@@ -128,7 +128,7 @@ section {
 
 #plan-sec pre{
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 70px;
     margin-bottom: 20px;
     line-height: 1.6rem;
     color: #2C2C2C;
@@ -199,7 +199,7 @@ section {
                 translateY(50px)
                 rotate(0);
     }
-    80% {
+    70% {
         transform:
                 translateY(340px)
                 rotate(10deg);
@@ -288,7 +288,7 @@ section {
                 translateY(200px)
                 rotate(25deg);
     }
-    85%{
+    75%{
         transform:
                 translateY(490px)
                 rotate(-10deg);
@@ -464,7 +464,7 @@ section {
 /* 아래로 수정 함 / 수빈 */
 .user-art1 {
     display: flex;
-    margin-left: 50px;
+    margin-left: 70px;
     gap: 20px;
 }
 
@@ -485,7 +485,7 @@ section {
     margin-top: 50px;
     margin-bottom: 150px;
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
     contain: paint;
 }
 
@@ -497,7 +497,7 @@ section {
 }
 
 .us-svg1 {
-    width: 700px;
+    width: 650px;
 }
 
 /* USER SURVEY 두번째 svg */
@@ -508,7 +508,7 @@ section {
 } */
 /* 아래로 수정 함 / 수빈 */
 .user-art2 p {
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 #container2 {
@@ -657,13 +657,13 @@ pre {
     background: linear-gradient(to bottom, #FF577C, #66B8FB); /* 그라데이션 색상 */
     border-top-right-radius: 700px; /* 오른쪽 위 border-radius */
     border-top-left-radius: 0; /* 왼쪽 위는 radius 없음 */
-    z-index: -1; /* 맨 뒤에 위치하게 설정 */
+    z-index: 1; /* 맨 뒤에 위치하게 설정 */
 }
 
 .bg13::after {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 45%;
     bottom: -20px; /* 아래쪽 위치 조정 */
     transform: translateX(-50%); /* 가운데 정렬 */
     width: 0;
@@ -765,3 +765,169 @@ pre {
 }
 
 /* 여기까지 경륜 css */
+
+/* 수진 온보딩부터 */
+
+#sec10{
+    height: 840px;
+    margin-bottom: 200px;
+
+}
+
+.ob-svg-list{
+    position: absolute;
+    top: 26.5%;
+    left: 42%;
+    display: flex;
+    width: 100vw;
+    transition: transform 0.4s ease;
+}
+
+.ob-svg-list img{
+    width: 245px;
+    margin: 0 20px;
+}
+
+.ob-scroll{
+    position: absolute;
+    top: 25%;
+    left: 42.5%;
+}
+
+.ob-scroll img{
+    width: 270px;
+}
+
+#sec11{
+    height: 1400px;
+    margin-bottom: 1200px;
+}
+
+#sec11 pre{
+    margin-left: 70px;
+}
+
+.st-sec1{
+    display: flex;
+}
+
+.st-sec2{
+    display: flex;
+    position: absolute;
+    top: 90%;
+}
+
+.st-circle{
+    position: relative;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    align-content: center;
+    text-align: center;
+    background-color: #FF577C;
+    border-radius: 50%;
+    float: right;
+    margin: 125px 0 20px 0;
+}
+
+
+.st-circle span{
+    text-align: center;
+}
+
+.st-line1{
+    position: absolute;
+    top: 32.3%;
+    left: 40%;
+}
+
+.st-box1{
+    display: flex;
+    position: absolute;
+    top: 22%;
+    left: 21%;
+}
+
+.st-box{
+    align-content: center;
+    margin: 0 25px;
+}
+
+.st-box img{
+    width: 265px;
+    margin-top: 20%;
+    margin-left: 50%;
+}
+
+.serv-sec{
+    position: relative;
+}
+
+.s-bg{
+    position: absolute;
+    top: 11150px;
+}
+
+.s-bg img{
+    width: 100vw;
+}
+
+.st-line2{
+    position: absolute;
+    top: 17.5%;
+}
+
+#sec12{
+    height: 2000px;
+    width: 100vw;
+}
+
+#sec12 div{
+    position: absolute;
+}
+
+#sec12 img{
+    width: 270px;
+}
+
+.st-svg-hover{
+    opacity: 0;
+}
+
+.in-svg-box1{
+    top: 15%;
+    left: 10%;
+}
+
+.in-svg-box2{
+    top: 25%;
+    left: 30%;
+}
+
+.in-svg-box3{
+    top: 10%;
+    left: 50%;
+}
+
+.in-svg-box4{
+    top: 30%;
+    left: 70%;
+}
+
+.in-svg-box5{
+    top: 50%;
+    left: 10%;
+}
+
+.in-svg-box6{
+    top: 60%;
+    left: 30%;
+}
+
+.in-svg-box7{
+    top: 45%;
+    left: 50%;
+}
+
+
