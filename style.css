@@ -69,7 +69,7 @@ li{
 
 .main-text{
     position: absolute;
-    left: 2.5%;
+    left: 5.5%;
     top: 38%;
     font-size: 22px;
     line-height: 1.4;
@@ -105,7 +105,7 @@ li{
 .p1{
     font-size: 24px;
     font-weight: 700;
-    margin-left: 70px;
+    margin-left: 100px;
     margin-top: 100px;
     margin-bottom: 35px;
     color: #5a5a5a;
@@ -115,30 +115,37 @@ li{
     color: #FF577C;
     font-weight: 500;
     font-size: 40px;
-    margin-left: 70px;
+    margin-left: 100px;
     margin-bottom: 20px;
 }
 
 .p3{
     color: #FF577C;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.bg-pre{
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 1.6rem;
+    color: #2C2C2C;
+    text-align: center;
 }
 
 #plan-sec pre{
     font-size: 20px;
-    margin-left: 70px;
+    margin-left: 100px;
     margin-bottom: 20px;
     line-height: 1.6rem;
     color: #2C2C2C;
 }
 
-/* 미관상 #des-sec에 존재하는 하나의 pre도 plan의 pre와
-같은 스타일을 공유하는 것이 시각적으로 좋을 것 같습니다. / 수빈  */
 #des-sec pre {
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-bottom: 20px;
     line-height: 1.6rem;
     color: #2C2C2C;
@@ -464,7 +471,7 @@ li{
 /* 아래로 수정 함 / 수빈 */
 .user-art1 {
     display: flex;
-    margin-left: 70px;
+    margin-left: 100px;
     gap: 20px;
 }
 
@@ -508,7 +515,7 @@ li{
 } */
 /* 아래로 수정 함 / 수빈 */
 .user-art2 p {
-    margin-left: 70px;
+    margin-left: 100px;
 }
 
 #container2 {
@@ -602,17 +609,32 @@ li{
     margin-bottom: 300px;
 }
 
+#container5 img {
+    scale: 0.8;
+}
+
 .des-s {
     width: 850px;
     height: 1000px;
+}
+
+
+.p4{
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 115px;
+    margin-top: 100px;
+    margin-bottom: 35px;
+    color: #5a5a5a;
 }
 
 .des-box1 {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
+
 .des-box1.up {
-    margin: 80px 50px 0 50px;
+    margin: 85px 40px 0 25px;
     opacity: 1;
     animation: up 1s cubic-bezier(0, 0, 0.08, 1.14) forwards;
 }
@@ -626,24 +648,29 @@ li{
 }
 
 .des-box2 {
-    margin-left: 200px;
+    margin-left: 150px;
 }
 
-.des-s2 {
-    margin-left: auto;
+.des-box2 img{
+    scale: 0.7;
+}
+
+.des-s2 img{
+    scale: 0.8;
 }
 
 /* 수빈 끝 */
 
 /*section 13 경륜 추가 수정*/
 
-pre {
+#sec13 pre {
     font-size: 20px;
     margin-left: 50px;
     margin-bottom: 20px;
     line-height: 1.6rem;
     color: #2C2C2C;
 }
+
 #sec13 {
     position: relative;
     width: 100%;
@@ -756,6 +783,7 @@ pre {
     max-width: 80%; /* 이미지 크기 조정 */
     height: auto; /* 자동 높이 */
 }
+
 #sec14{
 
 }
