@@ -76,7 +76,7 @@ li{
     margin-top: 50px;
     justify-content: center;
     position: absolute;
-/*     left: 60%; */
+    left: 60%;
     transform: translateX(-50%);
 }
 
