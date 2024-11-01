@@ -603,8 +603,8 @@ li{
 
 #container5 {
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-around;
+/*  gap: 40px; */
     height: 1000px;
     margin-bottom: 300px;
 }
