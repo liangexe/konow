@@ -94,9 +94,10 @@ section {
     height: 840px;
 }
 
-#sec3{
+/* #sec3 svg조정 때문에 주석처리 했습니다. / 수빈  */
+/* #sec3{
     height: 1400px;
-}
+} */
 
 #plan-sec{
     /*margin-top: 30px;*/
@@ -134,6 +135,16 @@ section {
     color: #2C2C2C;
 }
 
+/* 미관상 #des-sec에 존재하는 하나의 pre도 plan의 pre와
+같은 스타일을 공유하는 것이 시각적으로 좋을 것 같습니다. / 수빈  */
+#des-sec pre {
+    font-size: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    line-height: 1.6rem;
+    color: #2C2C2C;
+}
+
 #sec3 {
     position: relative;
     min-height: 100vh; /* 최소 화면 높이만큼 확보 */
@@ -152,13 +163,14 @@ section {
     bottom: 0; /* 섹션3의 하단에 위치하도록 */
 }
 
+/* 마찬가지로 svg조정을 위해 주석처리 했습니다. / 수빈 */
 /* SVG 위치 조정 */
-#sec3 svg {
+/* #sec3 svg {
     position: relative;
     display: block;
     margin: auto;
     height: calc(100vh - 500px); /* 전체 높이에서 여유 공간 확보 */
-}
+} */
 
 
 
@@ -391,18 +403,29 @@ section {
     font-size: 100px
 }
 
+/* 수빈 수정 시작 */
+
 /* sec3의 bg_svg_container 애니메이션 부분 */
-.bg_container_box.up {
-    transform: translateY(50px);
+
+/* 애니메이션이 시작될 때 깜빡거림 방지*/
+.bg_container_box {
     opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.bg_container_box.up {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    transform: translateY(50px);
+    opacity: 1;
     animation: up 1s ease-out forwards;
 }
 
 .bg_svg_container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    width: 1000px;
+    gap: 60px;
+    width: 1482px;
     margin: auto;
 }
 
@@ -418,7 +441,14 @@ section {
 }
 
 /* sec3의 bg_svg 애니메이션 부분 */
+
+.bg_svg {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
 .bg_svg.show {
+    opacity: 1;
     clip-path: inset(0 0 100% 0);
     animation: show 1s ease-out forwards;
 }
@@ -428,16 +458,185 @@ section {
     100% { clip-path: inset(0 0 0 0); }
 }
 
-.user-art1{
+/* sec4 USER SURVEY 부분 css */
+
+/* .user-art1{
     display: flex;
     align-content: space-between;
+} */
+/* 아래로 수정 함 / 수빈 */
+.user-art1 {
+    display: flex;
+    margin-left: 50px;
+    gap: 20px;
 }
 
-.user-art2{
+.us-scroll {
+    position: relative;
+}
+
+.us-g {
+    position: absolute;
+    left: -20px;
+    z-index: 2;
+}
+
+/* USER SURVEY 가로 스크롤 부분 svg */
+#container1 {
+    z-index: 1;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    overflow: hidden;
+    width: 100%;
+    contain: paint;
+}
+
+.user1 {
+    display: inline-flex;
+    gap: 60px;
+    position: sticky;
+    height: 500px;
+}
+
+.us-svg1 {
+    width: 700px;
+}
+
+/* USER SURVEY 두번째 svg */
+
+/* .user-art2{
     display: flex;
     align-content: space-between;
+} */
+/* 아래로 수정 함 / 수빈 */
+.user-art2 p {
+    margin-left: 50px;
 }
 
+#container2 {
+    display: flex;
+    justify-content: center;
+    height: 750px;
+    margin-top: 100px;
+    margin-bottom: 350px;
+}
+
+.user2 {
+    width: 1300px;
+}
+
+.survey:nth-child(2) {
+    float: right;
+}
+
+/* sec4 USER SURVEY 부분 svg 애니메이션. 상단의 @keyframes up 사용 */
+.us-svg2 {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.us-svg2.up {
+    margin: 25px;
+    height: 200px;
+    float: left;
+    transform: translateY(50px);
+    opacity: 1;
+    animation: up 0.8s cubic-bezier(0, 0, 0.08, 1.14) forwards;
+}
+
+/* sec5 OUR SERVICE 부분 css */
+#container3 {
+    display: flex;
+    justify-content: center;
+    height: 416px;
+    margin-top: 100px;
+    margin-bottom: 350px;
+}
+
+.serv-container {
+    display: inline-flex;
+    gap: 60px;
+
+}
+
+/* sec5 OUR SERVICE 부분 애니메이션 상단의 @keyframes up 사용 */
+.servBox {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.servBox.up {
+    opacity: 1;
+    animation: up 1s ease-out forwards;
+}
+
+/*.servAni1 {*/
+/*    animation-delay: 0s*/
+/*}*/
+/*.servAni2 {*/
+/*    animation-delay: 0.1s*/
+/*}*/
+/*.servAni3 {*/
+/*    animation-delay: 0.2s*/
+/*}*/
+/* 이거 딜레이 적용이 안되는데 방법을 좀 알아봐야할듯 함 */
+
+/* sec6 IA 정보구조도 부분 css */
+
+#container4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 350px;
+}
+
+/* sec7 비디오 부분 */
+
+/* 비디오는 아직 없어서 공백입니다. / 수빈 */
+
+/* sec8 des 부분 css */
+
+#container5 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    height: 1000px;
+    margin-bottom: 300px;
+}
+
+.des-s {
+    width: 850px;
+    height: 1000px;
+}
+
+.des-box1 {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.des-box1.up {
+    margin: 80px 50px 0 50px;
+    opacity: 1;
+    animation: up 1s cubic-bezier(0, 0, 0.08, 1.14) forwards;
+}
+
+/* sec9 des 부분 css */
+
+#container6 {
+    display: flex;
+    margin-bottom: 300px;
+    gap: 60px;
+}
+
+.des-box2 {
+    margin-left: 200px;
+}
+
+.des-s2 {
+    margin-left: auto;
+}
+
+/* 수빈 끝 */
 
 /*section 13 경륜 추가 수정*/
 
