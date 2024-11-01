@@ -654,9 +654,14 @@ li{
 .des-box2 img{
     scale: 0.7;
 }
+.des-s2 {
+    margin-left: 200px;
+    width: 875px;
+}
 
 .des-s2 img{
     scale: 0.8;
+    
 }
 
 /* 수빈 끝 */
