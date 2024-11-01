@@ -651,12 +651,18 @@ li{
     margin-left: 150px;
 }
 
+.des-s1 {
+    margin-left: 70px;
+    width: 850px;
+    height: 1000px;
+}
+
 .des-box2 img{
     scale: 0.7;
 }
 .des-s2 {
-    margin-left: 200px;
-    width: 875px;
+/*  margin-left: 200px; */
+    width: 1035px;
 }
 
 .des-s2 img{
