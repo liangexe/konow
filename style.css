@@ -673,140 +673,7 @@ li{
 
 /* 수빈 끝 */
 
-/*section 13 경륜 추가 수정*/
-
-#sec13 pre {
-    font-size: 20px;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    line-height: 1.6rem;
-    color: #2C2C2C;
-}
-
-#sec13 {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-.bg13 {
-    position: relative;
-    width: 1920px;
-    height: 2800px;
-    background: linear-gradient(to bottom, #FF577C, #66B8FB); /* 그라데이션 색상 */
-    border-top-right-radius: 700px; /* 오른쪽 위 border-radius */
-    border-top-left-radius: 0; /* 왼쪽 위는 radius 없음 */
-    z-index: 1; /* 맨 뒤에 위치하게 설정 */
-}
-
-.bg13::after {
-    content: '';
-    position: absolute;
-    left: 45%;
-    bottom: -20px; /* 아래쪽 위치 조정 */
-    transform: translateX(-50%); /* 가운데 정렬 */
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent; /* 역삼각형 왼쪽 */
-    border-right: 20px solid transparent; /* 역삼각형 오른쪽 */
-    border-top: 20px solid #66B8FB; /* 역삼각형 색상 */
-}
-
-.s13-svg1{
-    float: left;
-    position: relative;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-.s13-svg2{
-    float: right;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translate(0, -50%); /* 위로 50% 이동 */
-    border: solid 1px gray;
-
-}
-.sec13-p{
-    float: right;
-}
-.sm-box {
-    flex: 1;
-    display: flex;
-    gap: 40px;
-}
-.sec13-p1{
-    font-size: 50px;
-}
-.sm213 {
-    width: 50%;
-    position: relative;
-    top: 1000px;
-    margin-bottom: 300px;
-
-}
-
-.sm-svg1, .sm-svg2, .sm-svg3 {
-    position: absolute;
-    top: 0; /* 원하는 위치에 따라 조정 */
-    left: 0; /* 원하는 위치에 따라 조정 */
-}
-
-/* z-index 설정 */
-.sm-svg1 {
-    z-index: 3; /* 가장 낮은 z-index */
-}
-.sm-svg2 {
-    z-index: 4; /* 가장 높은 z-index */
-}
-.sm-svg3 {
-    z-index: 3; /* 가장 낮은 z-index */
-}
-
-
-.sec13-container {
-    display: flex; /* flexbox 사용 */
-    flex-wrap: wrap; /* 여러 줄로 나눔 */
-    justify-content: flex-end; /* 오른쪽 정렬 */
-    gap: 20px; /* 아이템 간격 추가 */
-    padding: 20px; /* 여백 추가 */
-}
-.sm-svg4{
-    float: left;
-    margin-left: -300px;
-    margin-top: 1600px;
-}
-
-.sec13-TBox {
-    margin-left: -300px;
-    margin-top: 1600px;
-    width: 400px;
-    height: 400px;
-    display: flex; /* 내부 요소 정렬을 위해 flex 사용 */
-    flex-direction: column; /* 세로 방향으로 정렬 */
-    justify-content: center; /* 중앙 정렬 */
-    align-items: center; /* 중앙 정렬 */
-    padding: 10px; /* 내부 여백 추가 */
-    margin-bottom: 20px;
-}
-
-.sm-svg {
-    max-width: 80%; /* 이미지 크기 조정 */
-    height: auto; /* 자동 높이 */
-}
-
-#sec14{
-
-}
-
-.sec14-text{
-    text-align: center;
-}
-
-/* 여기까지 경륜 css */
-
-/* 수진 온보딩부터 */
+/* 수진 1101 온보딩부터 */
 
 #sec10{
     height: 840px;
@@ -900,13 +767,13 @@ li{
     margin-left: 50%;
 }
 
-.serv-sec{
+#serv-sec{
     position: relative;
 }
 
 .s-bg{
     position: absolute;
-    top: 11150px;
+    top: -2%;
 }
 
 .s-bg img{
@@ -970,4 +837,385 @@ li{
     left: 50%;
 }
 
+/* 수진 1101 */
+
+/*section 13 경륜 추가 수정 // 1101 수진 레이아웃 수정 */
+
+#serv-sec pre {
+    font-size: 20px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    line-height: 1.6rem;
+    color: #2C2C2C;
+}
+
+#sec13 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.bg13 {
+    position: relative;
+    margin-top: 250px;
+    width: 100vw;
+    height: 2800px;
+    background: linear-gradient(to bottom, #FF577C, #66B8FB); /* 그라데이션 색상 */
+    border-top-right-radius: 600px; /* 오른쪽 위 border-radius */
+    border-top-left-radius: 0; /* 왼쪽 위는 radius 없음 */
+    z-index: 1; /* 맨 뒤에 위치하게 설정 */
+}
+
+.bg13::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -100px; /* 아래쪽 위치 조정 */
+    transform: translateX(-50%); /* 가운데 정렬 */
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent; /* 역삼각형 왼쪽 */
+    border-right: 80px solid transparent; /* 역삼각형 오른쪽 */
+    border-top: 100px solid #66B8FB; /* 역삼각형 색상 */
+}
+
+.s13-svg1{
+    position: absolute;
+    width: 400px;
+    z-index: 3;
+    top: 10%;
+    left: 10%;
+}
+
+.s13-svg2{
+    position: absolute;
+    left: 30%;
+    top: 18%;
+    z-index: 2;
+}
+
+.sm-box {
+    position: absolute;
+    left: 50%;
+    top: 17.6%;
+    z-index: 2;
+}
+
+.sec13-p1{
+    font-size: 35px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sec13-p2{
+    font-size: 18px;
+    color: white;
+}
+
+.sm213 {
+    position: absolute;
+    z-index: 2;
+    left: 100px;
+    top: 600px;
+}
+
+.sm-svg1, .sm-svg2, .sm-svg3 {
+    position: absolute;
+}
+
+/* z-index 설정 */
+.sm-svg1 {
+    z-index: 3; /* 가장 낮은 z-index */
+}
+.sm-svg2 {
+    z-index: 4; /* 가장 높은 z-index */
+}
+.sm-svg3 {
+    z-index: 3; /* 가장 낮은 z-index */
+}
+
+/* 없길래 주석처리함
+.sec13-container {*/
+/*    display: flex; !* flexbox 사용 *!*/
+/*    flex-wrap: wrap; !* 여러 줄로 나눔 *!*/
+/*    justify-content: flex-end; !* 오른쪽 정렬 *!*/
+/*    gap: 20px; !* 아이템 간격 추가 *!*/
+/*    padding: 20px; !* 여백 추가 *!*/
+/*}*/
+
+.sm-svg4{
+    width: 400px;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    z-index: 2;
+}
+
+.sec13-TBox {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    top: 72%;
+    left: 43%;
+}
+
+.sec13-TBox1 {
+    margin: 0 60px 0 0;
+}
+
+.sm-svg {
+    border-radius: 30px;
+}
+
+.sec13-p3{
+    font-size: 26px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.sec13-p4{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+/* 여기까지 경륜 css 1031
+   수진 1101 수정 */
+
+
+#sec14{
+    position: relative;
+    height: 2000px;
+}
+
+.sec14-text{
+    margin: 250px 0 50px 0;
+    text-align: center;
+}
+
+.s14-1{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 50px;
+        color: #5a5a5a;
+    }
+
+.s14-2{
+    color: #FF577C;
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.s14-3{
+    font-size: 18px;
+    line-height: 1.6rem;
+    color: #2C2C2C;
+}
+
+.dl-svg-box1 img{
+    scale: 0.8;
+}
+
+.dl-svg-box2 img{
+    position: absolute;
+    top: 65%;
+    scale: 0.7;
+}
+
+.dl-svg1{
+    left: 12%;
+}
+
+.dl-svg2{
+    left: 8%;
+}
+
+.dl-svg3{
+    left: 60%;
+    margin-top: 300px;
+}
+
+#sec15{
+    position: relative;
+    height: 900px;
+}
+
+.bl-svg-list{
+    position: absolute;
+    top: 31%;
+    left: 4.5%;
+    display: flex;
+    width: 100vw;
+    transition: transform 0.4s ease;
+}
+
+.bl-svg-list img{
+    width: 245px;
+    margin: 0 20px;
+}
+
+.bl-scroll{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.bl-scroll img{
+    width: 270px;
+}
+
+#sec16{
+    height: 1200px;
+}
+
+.at-svg-box{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 12%;
+    top: 20%;
+}
+
+.at-svg-box img{
+    padding: 0 20px;
+}
+
+.at-svg2{
+    margin-top: 150px;
+}
+
+.at-svg3{
+    margin-top: 250px;
+}
+
+#sec17{
+    height: 3500px;
+    position: relative;
+}
+
+.ana1-box{
+    position: absolute;
+    left: 7%;
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.ana2-box{
+    position: absolute;
+    left: 20%;
+    top: 23.3%;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.ana3-box{
+    position: absolute;
+    left: 23%;
+    top: 37%;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+
+
+.ana-svg2{
+    position: absolute;
+    left: 100%;
+    top: 10%;
+}
+
+.sec17-p1{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 96px;
+    margin-bottom: 15px;
+}
+
+#sec17 pre{
+    color: #515151;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.sec17-TBox1{
+    position: absolute;
+    top: 9.4%;
+    left: 120%;
+}
+
+.sec17-TBox2{
+    position: absolute;
+    top: 46%;
+    left: 88%;
+}
+
+.sec17-TBox3{
+    position: absolute;
+    top: 46.6%;
+    left: 88%;
+}
+
+
+.anaP-box{
+    position: relative;
+    top: 55%;
+}
+
+
+.sec17-TBox4{
+    position: relative;
+    left: 37%;
+    top: 5%;
+}
+
+.ana-svg7{
+    position: relative;
+    width: 350px;
+    left: 42%;
+    top: 50%;
+}
+
+.ana-svg8{
+    position: absolute;
+    left: 44%;
+    top: 40%;
+}
+
+#sec18{
+    position: relative;
+    height: 1000px;
+}
+
+.proto-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.proto-t{
+    position: absolute;
+    font-size: 60px;
+    font-weight: 500;
+    top: 30%;
+    left: 12%;
+}
+
+.proto-svg1{
+    position: absolute;
+    top: 60%;
+    left: 12%;
+}
+
+.proto-svg2{
+    position: absolute;
+    top: 15%;
+    left: 60%;
+}
 
