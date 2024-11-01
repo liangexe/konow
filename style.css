@@ -6,6 +6,10 @@
     font-family: 'Pretendard', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -16,19 +20,55 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgb(211, 211, 211); /*임시 색상*/
-    transition: top 0.5s ease;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255,255,255,0));
     z-index: 1000;
 }
+
+.h-svg{
+    margin-left: 70px;
+}
+
 
 ul{
     display: flex;
     list-style: none;
-    margin-right: 30px;
+    margin-right: 70px;
 }
 
 li{
     padding: 0 20px;
+    color: #717171;
+    font-weight: 600;
+}
+
+.main-title {
+    position: absolute;
+    left: 3%;
+    font-size: 140px;
+    font-weight: 600;
+    line-height: 1.0;
+    background: linear-gradient(90deg, rgba(255, 87, 124, 1) 0%, rgba(102, 184, 251, 1) 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.main-text{
+    position: absolute;
+    left: 3.5%;
+    top: 38%;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #9B9B9B;
+}
+
+.m-svg{
+    position: absolute;
+    left: 35%;
+    top: 5%;
+    overflow: hidden;
+    width: 67%;
 }
 
 #wrap{
@@ -40,10 +80,10 @@ li{
 }
 
 section {
-    width: 90vw;
+    width: 95vw;
     position: relative;
     margin: 20px;
-    border: solid 1px #9B9B9B;
+    /*border: solid 1px #9B9B9B;*/
 }
 
 #sec1{
@@ -120,17 +160,216 @@ section {
     height: calc(100vh - 500px); /* 전체 높이에서 여유 공간 확보 */
 }
 
-/*.svg-con {*/
-/*    width: 800px;*/
-/*    height: 700px;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*}*/
 
-/*.svg-con svg[class^="ov-"] {*/
-/*    position: absolute;*/
-/*    transition: transform 0.015s linear;*/
-/*}*/
+
+/* 수진 수정 시작 */
+
+.svg-con {
+    position: absolute;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    animation: drop 1.1s ease-out forwards;
+}
+
+.ov-1 {
+    opacity: 0;
+    position: absolute;
+    left: 55%;
+    transition: opacity 0.2s, transform 0.2s ease;
+}
+
+.ov-1.active{
+    opacity: 1;
+    animation: drop1 1.1s cubic-bezier(0.2, 0, 0.1, 1) forwards;
+}
+
+@keyframes drop1 {
+    0% {
+        transform:
+                translateY(50px)
+                rotate(0);
+    }
+    80% {
+        transform:
+                translateY(340px)
+                rotate(10deg);
+
+    }
+    100% {
+        transform:
+                translateY(365px)
+                rotate(5deg);
+
+    }
+}
+
+.ov-2 {
+    opacity: 0;
+    position: absolute;
+    left: 44%;
+    transition: opacity 0.8s, transform 0.8s ease;
+}
+
+.ov-2.active{
+    opacity: 1;
+    animation: drop2 0.8s cubic-bezier(0.2, 0, 0.2, 1) forwards;
+}
+
+@keyframes drop2 {
+    0% {
+        transform:
+                translateY(100px)
+                rotate(-10deg);
+    }
+    70%{
+        transform:
+                translateY(540px)
+                rotate(-50deg);
+    }
+    100% {
+        transform:
+                translateY(570px)
+                rotate(-45deg);
+
+    }
+}
+
+.ov-3 {
+    opacity: 0;
+    position: absolute;
+    left: 56%;
+    transition: opacity 0.7s, transform 0.7s ease;
+}
+
+.ov-3.active{
+    opacity: 1;
+    animation: drop3 0.7s cubic-bezier(0.25, 0, 0.2, 1) forwards;
+}
+
+@keyframes drop3 {
+    0% {
+        transform:
+                translateY(150px)
+                rotate(30deg);
+    }
+    100% {
+        transform:
+                translateY(650px)
+                rotate(0);
+
+    }
+}
+
+.ov-4 {
+    opacity: 0;
+    position: absolute;
+    left: 62.5%;
+    transition: opacity 0.7s, transform 0.7s ease;
+}
+
+.ov-4.active{
+    opacity: 1;
+    animation: drop4 0.7s cubic-bezier(0.25, 0, 0.1, 1) forwards;
+}
+
+@keyframes drop4 {
+    0% {
+        transform:
+                translateY(200px)
+                rotate(25deg);
+    }
+    85%{
+        transform:
+                translateY(490px)
+                rotate(-10deg);
+    }
+    100% {
+        transform:
+                translateY(525px)
+                rotate(0deg);
+    }
+}
+
+.ov-5 {
+    opacity: 0;
+    position: absolute;
+    left: 73%;
+    transition: opacity 0.6s, transform 0.6s ease;
+}
+
+.ov-5.active{
+    opacity: 1;
+    animation: drop5 0.6s cubic-bezier(0.2, 0, 0.2, 1) forwards;
+}
+
+@keyframes drop5 {
+    0% {
+        transform:
+            translateY(300px)
+            rotate(-15deg);
+    }
+    80% {
+        transform:
+            translateY(630px)
+            rotate(10deg);
+
+    }
+    100% {
+        transform:
+            translateY(650px)
+            rotate(0deg);
+
+    }
+}
+
+.ov-6 {
+    opacity: 0;
+    position: absolute;
+    left: 80%;
+    transition: opacity 0.9s, transform 0.9s ease;
+}
+
+.ov-6.active{
+    opacity: 1;
+    animation: drop6 0.9s cubic-bezier(0.25, 0, 0.3, 1) forwards;
+}
+
+@keyframes drop6 {
+    0% {
+        transform:
+                translateY(350px)
+                rotate(25deg);
+    }
+    100% {
+        transform:
+                translateY(530px)
+                rotate(2deg);
+    }
+}
+
+.ov-7 {
+    opacity: 0;
+    position: absolute;
+    left: 90%;
+    transition: opacity 0.5s, transform 0.5s ease;
+}
+
+.ov-7.active{
+    opacity: 1;
+    animation: drop7 0.5s cubic-bezier(0.25, 0, 0.3, 1) forwards;
+}
+
+@keyframes drop7 {
+    0% {
+        transform: translateY(400px);
+    }
+    100% {
+        transform: translateY(655px);
+    }
+}
+
+/* 여기까지 수진 */
 
 .main{
     display: flex;
