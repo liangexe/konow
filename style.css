@@ -1323,6 +1323,7 @@ th {
     /* margin-left: 0; */
     /* text-align: left; */
     font-weight: 500;
+    padding-bottom: 25px;
 }
 
 .trName{
