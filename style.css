@@ -489,6 +489,7 @@ li{
 
 /* user survey 가로 스크롤 부분 svg */
 #container1 {
+    scroll-behavior: smooth;
     z-index: 1;
     padding: 50px;
     margin-top: 50px;
@@ -503,6 +504,7 @@ li{
     gap: 60px;
     position: sticky;
     height: 500px;
+    transition: transform 0.5s ease;
 }
 
 .us-svg1 {
