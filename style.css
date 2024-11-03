@@ -1133,18 +1133,23 @@ li{
     padding: 0 20px;
 }
 
-.at-svg1{
+.at-svg1 {
+    border-radius: 73px;
+    height: 864.25px;
     animation: bounce 1s ease-in-out infinite alternate;
 }
 
-.at-svg2{
+.at-svg2 {
+    border-radius: 73px;
+    height: 864.25px;
     margin-top: 150px;
     animation: bounce 1s 300ms ease-in-out infinite alternate;
 }
 
-.at-svg3{
-    margin-top: 250px;
-    animation: bounce 1s 600ms  ease-in-out infinite alternate;
+.at-svg3 {
+    width: 422.39px;
+    margin-top: 300px;
+    animation: bounce 1s 600ms ease-in-out infinite alternate;
 }
 
 #sec17{
