@@ -552,6 +552,20 @@ li{
     width: 270px;
 }
 
+/* 프로필 부분 애니메이션 추가 / 수빈 */
+.userP {
+    animation: bounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-7px);
+    }
+}
+
 .user2 {
     width: 1300px;
 }
@@ -590,12 +604,12 @@ li{
 }
 
 /* sec5 our service 부분 애니메이션 상단의 @keyframes up 사용 */
-.servbox {
+.servBox {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-.servbox.up {
+.servBox.up {
     opacity: 1;
     animation: up 1s ease-out forwards;
 }
@@ -810,6 +824,7 @@ li{
     top: 17.5%;
 }
 
+/* sec12 CHOOSE YOUR INTERESTS! 부분 */
 #sec12{
     height: 2000px;
     width: 100vw;
@@ -821,10 +836,6 @@ li{
 
 #sec12 img{
     width: 270px;
-}
-
-.st-svg-hover{
-    opacity: 0;
 }
 
 .in-svg-box1{
@@ -860,6 +871,23 @@ li{
 .in-svg-box7{
     top: 45%;
     left: 50%;
+}
+
+/* in 부분 svg 애니메이션 추가 / 수빈 */
+.in-anime {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.in-anime.up {
+    transform: translatey(50px);
+    opacity: 1;
+    animation: up 1s ease-out forwards;
+}
+
+/* 위의 키프레임 bounce 추가 */
+.in-svg {
+    animation: bounce 1s ease-in-out infinite alternate;
 }
 
 /* 수진 1101 */
