@@ -12,6 +12,7 @@
     justify-content: center;
     position: absolute;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 section {
@@ -637,16 +638,12 @@ li{
     margin-bottom: 350px;
 }
 
-/* sec7 비디오 부분 */
-
-/* 비디오는 아직 없어서 공백입니다. / 수빈 */
-
 /* sec8 des 부분 css */
 
 #container5 {
     display: flex;
     justify-content: space-around;
-/*  gap: 40px; */
+    /*  gap: 40px; */
     height: 1000px;
     margin-bottom: 300px;
 }
@@ -702,13 +699,9 @@ li{
 .des-box2 img{
     scale: 0.7;
 }
-.des-s2 {
-/*  margin-left: 200px; */
-    width: 1035px;
-}
 
 .des-s2 img{
-    scale: 0.8;
+    width: 960px;
 
 }
 
@@ -815,6 +808,7 @@ li{
 .s-bg{
     position: absolute;
     top: -2%;
+    z-index: -1;
 }
 
 .s-bg img{
@@ -834,6 +828,7 @@ li{
 
 #sec12 div{
     position: absolute;
+    z-index: 15;
 }
 
 #sec12 img{
@@ -910,30 +905,6 @@ li{
     height: auto;
 }
 
-.bg13 {
-    position: relative;
-    margin-top: 250px;
-    width: 100vw;
-    height: 2800px;
-    background: linear-gradient(to bottom, #ff577c, #66b8fb); /* 그라데이션 색상 */
-    border-top-right-radius: 600px; /* 오른쪽 위 border-radius */
-    border-top-left-radius: 0; /* 왼쪽 위는 radius 없음 */
-    z-index: 1; /* 맨 뒤에 위치하게 설정 */
-}
-
-.bg13::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -100px; /* 아래쪽 위치 조정 */
-    transform: translatex(-50%); /* 가운데 정렬 */
-    width: 0;
-    height: 0;
-    border-left: 80px solid transparent; /* 역삼각형 왼쪽 */
-    border-right: 80px solid transparent; /* 역삼각형 오른쪽 */
-    border-top: 100px solid #66b8fb; /* 역삼각형 색상 */
-}
-
 .s13-svg1{
     position: absolute;
     width: 400px;
@@ -989,15 +960,6 @@ li{
     z-index: 3; /* 가장 낮은 z-index */
 }
 
-/* 없길래 주석처리함
-.sec13-container {*/
-/*    display: flex; !* flexbox 사용 *!*/
-/*    flex-wrap: wrap; !* 여러 줄로 나눔 *!*/
-/*    justify-content: flex-end; !* 오른쪽 정렬 *!*/
-/*    gap: 20px; !* 아이템 간격 추가 *!*/
-/*    padding: 20px; !* 여백 추가 *!*/
-/*}*/
-
 .sm-svg4{
     width: 400px;
     position: absolute;
@@ -1006,7 +968,7 @@ li{
     z-index: 2;
 }
 
-.sec13-tbox {
+.sec13-Tbox {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -1015,7 +977,7 @@ li{
     left: 43%;
 }
 
-.sec13-tbox1 {
+.sec13-Tbox1 {
     margin: 0 60px 0 0;
 }
 
@@ -1050,11 +1012,11 @@ li{
 }
 
 .s14-1{
-        font-size: 22px;
-        font-weight: 700;
-        margin-bottom: 50px;
-        color: #5a5a5a;
-    }
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #5a5a5a;
+}
 
 .s14-2{
     color: #ff577c;
@@ -1097,28 +1059,8 @@ li{
     height: 900px;
 }
 
-.bl-svg-list{
-    position: absolute;
-    top: 31%;
-    left: 4.5%;
-    display: flex;
-    width: 100vw;
-    transition: transform 0.4s ease;
-}
+.bl-gif{
 
-.bl-svg-list img{
-    width: 245px;
-    margin: 0 20px;
-}
-
-.bl-scroll{
-    position: absolute;
-    top: 30%;
-    left: 5%;
-}
-
-.bl-scroll img{
-    width: 270px;
 }
 
 #sec16{
@@ -1199,19 +1141,19 @@ li{
     line-height: 1.4;
 }
 
-.sec17-tbox1{
+.sec17-Tbox1{
     position: absolute;
     top: 9.4%;
     left: 120%;
 }
 
-.sec17-tbox2{
+.sec17-Tbox2{
     position: absolute;
     top: 46%;
     left: 88%;
 }
 
-.sec17-tbox3{
+.sec17-Tbox3{
     position: absolute;
     top: 46.6%;
     left: 88%;
@@ -1272,4 +1214,3 @@ li{
     top: 15%;
     left: 60%;
 }
-
