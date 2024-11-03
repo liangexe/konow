@@ -715,30 +715,6 @@ li{
 
 }
 
-.ob-svg-list{
-    position: absolute;
-    top: 26.5%;
-    left: 42%;
-    display: flex;
-    width: 100vw;
-    transition: transform 0.4s ease;
-}
-
-.ob-svg-list img{
-    width: 245px;
-    margin: 0 20px;
-}
-
-.ob-scroll{
-    position: absolute;
-    top: 25%;
-    left: 42.5%;
-}
-
-.ob-scroll img{
-    width: 270px;
-}
-
 #sec11{
     height: 1400px;
     margin-bottom: 1200px;
@@ -907,7 +883,6 @@ li{
 
 .s13-svg1{
     position: absolute;
-    width: 400px;
     z-index: 3;
     top: 10%;
     left: 10%;
@@ -1213,4 +1188,49 @@ li{
     position: absolute;
     top: 15%;
     left: 60%;
+}
+
+/* footer */
+
+footer{
+    width: 100vw;
+    height: 400px;
+    font-size: 20px;
+}
+
+table{
+    margin: 30px 0 0 100px;
+}
+
+.footer-p1{
+    margin: 50px 0 20px 100px;
+    font-weight: 500;
+}
+
+.footer-p2{
+    margin: 60px 0 0 100px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+}
+
+td{
+    width: 300px;
+}
+
+th{
+    text-align: left;
+    font-weight: 500;
+}
+
+tr{
+    height: 55px;
+}
+
+.trName{
+    font-size: 24px;
+}
+
+.trEmail{
+    color: #6B6B6B;
+    font-size: 18px;
 }
