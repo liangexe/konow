@@ -1048,6 +1048,7 @@ li{
     flex-direction: row;
     left: 12%;
     top: 20%;
+    z-index: 5;
 }
 
 .at-svg-box img{
