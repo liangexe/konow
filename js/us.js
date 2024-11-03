@@ -3,7 +3,7 @@ document.getElementById('container1').addEventListener('wheel', function (scroll
     scroll.preventDefault();
 
     let usScroll = this.scrollLeft + scroll.deltaY;
-    usScroll = Math.max(0, Math.min(usScroll, 600));
+    usScroll = Math.max(0, Math.min(usScroll, 520));
     this.scrollLeft = usScroll;
 
     document.querySelector('.user1').style.transform = `translateX(-${usScroll}px)`;
