@@ -1048,11 +1048,14 @@ li{
     flex-direction: row;
     left: 12%;
     top: 20%;
-    z-index: 5;
 }
 
 .at-svg-box img{
     padding: 0 20px;
+}
+
+.at-svg1{
+    z-index: 4;
 }
 
 .at-svg2{
