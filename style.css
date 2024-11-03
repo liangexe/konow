@@ -3,7 +3,7 @@
     padding: 0;
     top: 0;
     left: 0;
-    font-family: 'Pretendard', sans-serif;
+    font-family: 'pretendard', sans-serif;
 }
 
 #wrap{
@@ -17,7 +17,7 @@
 section {
     position: relative;
     width: 100vw;
-    /*border: solid 1px #9B9B9B;*/
+    /*border: solid 1px #9b9b9b;*/
 }
 
 body{
@@ -50,9 +50,10 @@ ul{
 }
 
 li{
-    padding: 0 20px;
-    color: #717171;
-    font-weight: 600;
+    padding: 0 72px; /*간격 20px->72px*/
+    color: #313131;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 .main-title {
@@ -74,15 +75,15 @@ li{
     font-size: 22px;
     line-height: 1.4;
     font-weight: 500;
-    color: #9B9B9B;
+    color: #9b9b9b;
 }
 
 .m-svg{
     position: absolute;
-    left: 35%;
+    left: 40%;
     top: 5%;
     overflow: hidden;
-    width: 67%;
+    width: 60%;
 }
 
 #sec1{
@@ -112,7 +113,7 @@ li{
 }
 
 .p2{
-    color: #FF577C;
+    color: #ff577c;
     font-weight: 500;
     font-size: 40px;
     margin-left: 100px;
@@ -120,7 +121,7 @@ li{
 }
 
 .p3{
-    color: #FF577C;
+    color: #ff577c;
     font-weight: 600;
     font-size: 45px;
     margin-bottom: 20px;
@@ -131,7 +132,7 @@ li{
     font-size: 20px;
     margin-top: 40px;
     line-height: 1.6rem;
-    color: #2C2C2C;
+    color: #2c2c2c;
     text-align: center;
 }
 
@@ -140,7 +141,7 @@ li{
     margin-left: 100px;
     margin-bottom: 20px;
     line-height: 1.6rem;
-    color: #2C2C2C;
+    color: #2c2c2c;
 }
 
 #des-sec pre {
@@ -148,7 +149,7 @@ li{
     margin-left: 100px;
     margin-bottom: 20px;
     line-height: 1.6rem;
-    color: #2C2C2C;
+    color: #2c2c2c;
 }
 
 #sec3 {
@@ -170,7 +171,7 @@ li{
 }
 
 /* 마찬가지로 svg조정을 위해 주석처리 했습니다. / 수빈 */
-/* SVG 위치 조정 */
+/* svg 위치 조정 */
 /* #sec3 svg {
     position: relative;
     display: block;
@@ -203,18 +204,18 @@ li{
 @keyframes drop1 {
     0% {
         transform:
-                translateY(50px)
+                translatey(50px)
                 rotate(0);
     }
     70% {
         transform:
-                translateY(340px)
+                translatey(340px)
                 rotate(10deg);
 
     }
     100% {
         transform:
-                translateY(365px)
+                translatey(365px)
                 rotate(5deg);
 
     }
@@ -235,17 +236,17 @@ li{
 @keyframes drop2 {
     0% {
         transform:
-                translateY(100px)
+                translatey(100px)
                 rotate(-10deg);
     }
     70%{
         transform:
-                translateY(540px)
+                translatey(540px)
                 rotate(-50deg);
     }
     100% {
         transform:
-                translateY(570px)
+                translatey(570px)
                 rotate(-45deg);
 
     }
@@ -266,12 +267,12 @@ li{
 @keyframes drop3 {
     0% {
         transform:
-                translateY(150px)
+                translatey(150px)
                 rotate(30deg);
     }
     100% {
         transform:
-                translateY(650px)
+                translatey(650px)
                 rotate(0);
 
     }
@@ -292,17 +293,17 @@ li{
 @keyframes drop4 {
     0% {
         transform:
-                translateY(200px)
+                translatey(200px)
                 rotate(25deg);
     }
     75%{
         transform:
-                translateY(490px)
+                translatey(490px)
                 rotate(-10deg);
     }
     100% {
         transform:
-                translateY(525px)
+                translatey(525px)
                 rotate(0deg);
     }
 }
@@ -322,18 +323,18 @@ li{
 @keyframes drop5 {
     0% {
         transform:
-                translateY(300px)
+                translatey(300px)
                 rotate(-15deg);
     }
     80% {
         transform:
-                translateY(630px)
+                translatey(630px)
                 rotate(10deg);
 
     }
     100% {
         transform:
-                translateY(650px)
+                translatey(650px)
                 rotate(0deg);
 
     }
@@ -354,12 +355,12 @@ li{
 @keyframes drop6 {
     0% {
         transform:
-                translateY(350px)
+                translatey(350px)
                 rotate(25deg);
     }
     100% {
         transform:
-                translateY(530px)
+                translatey(530px)
                 rotate(2deg);
     }
 }
@@ -378,10 +379,10 @@ li{
 
 @keyframes drop7 {
     0% {
-        transform: translateY(400px);
+        transform: translatey(400px);
     }
     100% {
-        transform: translateY(655px);
+        transform: translatey(655px);
     }
 }
 
@@ -399,7 +400,7 @@ li{
     margin-top: 100px;            /* 위쪽 여백 조정 */
 }
 .m-art h1 {
-    background: linear-gradient(to right, #FF577C, #66B8FB);
+    background: linear-gradient(to right, #ff577c, #66b8fb);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;             /* 텍스트 색을 투명하게 해서 그라데이션이 보이게 함 */
@@ -420,7 +421,7 @@ li{
 .bg_container_box.up {
     margin-top: 80px;
     margin-bottom: 50px;
-    transform: translateY(50px);
+    transform: translatey(50px);
     opacity: 1;
     animation: up 1s ease-out forwards;
 }
@@ -435,11 +436,11 @@ li{
 
 @keyframes up {
     from {
-        transform: translateY(50px);
+        transform: translatey(50px);
         opacity: 0;
     }
     to {
-        transform: translateY(0);
+        transform: translatey(0);
         opacity: 1;
     }
 }
@@ -462,7 +463,7 @@ li{
     100% { clip-path: inset(0 0 0 0); }
 }
 
-/* sec4 USER SURVEY 부분 css */
+/* sec4 user survey 부분 css */
 
 /* .user-art1{
     display: flex;
@@ -477,6 +478,7 @@ li{
 
 .us-scroll {
     position: relative;
+    margin-left: 50px;  /*글씨박스랑 맞춤 - 마진값 50px 추가*/
 }
 
 .us-g {
@@ -485,7 +487,7 @@ li{
     z-index: 2;
 }
 
-/* USER SURVEY 가로 스크롤 부분 svg */
+/* user survey 가로 스크롤 부분 svg */
 #container1 {
     z-index: 1;
     padding: 50px;
@@ -507,7 +509,7 @@ li{
     width: 650px;
 }
 
-/* USER SURVEY 두번째 svg */
+/* user survey 두번째 svg */
 
 /* .user-art2{
     display: flex;
@@ -519,11 +521,35 @@ li{
 }
 
 #container2 {
+    position: relative;
     display: flex;
     justify-content: center;
     height: 750px;
     margin-top: 100px;
     margin-bottom: 350px;
+}
+
+/* 왼쪽 외국인 프로필 */
+.left-pro1 {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    width: 200px;
+}
+
+.left-pro2 {
+    position: absolute;
+    left: 90px;
+    top: 600px;
+    width: 250px;
+}
+
+/* 오른쪽 프로필 */
+.right-pro3 {
+    position: absolute;
+    left: 1600px;
+    top: 350px;
+    width: 270px;
 }
 
 .user2 {
@@ -534,7 +560,7 @@ li{
     float: right;
 }
 
-/* sec4 USER SURVEY 부분 svg 애니메이션. 상단의 @keyframes up 사용 */
+/* sec4 user survey 부분 svg 애니메이션. 상단의 @keyframes up 사용 */
 .us-svg2 {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -544,50 +570,49 @@ li{
     margin: 25px;
     height: 200px;
     float: left;
-    transform: translateY(50px);
+    transform: translatey(50px);
     opacity: 1;
     animation: up 0.8s cubic-bezier(0, 0, 0.08, 1.14) forwards;
 }
 
-/* sec5 OUR SERVICE 부분 css */
+/* sec5 our service 부분 css */
 #container3 {
     display: flex;
     justify-content: center;
-    height: 416px;
+    height: 400px;
     margin-top: 100px;
     margin-bottom: 350px;
 }
 
 .serv-container {
     display: inline-flex;
-    gap: 60px;
-
+    gap: 105px;
 }
 
-/* sec5 OUR SERVICE 부분 애니메이션 상단의 @keyframes up 사용 */
-.servBox {
+/* sec5 our service 부분 애니메이션 상단의 @keyframes up 사용 */
+.servbox {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-.servBox.up {
+.servbox.up {
     opacity: 1;
     animation: up 1s ease-out forwards;
 }
 
-/*.servAni1 {*/
+/*.servani1 {*/
 /*    animation-delay: 0s*/
 /*}*/
-/*.servAni2 {*/
+/*.servani2 {*/
 /*    animation-delay: 0.1s*/
 /*}*/
-/*.servAni3 {*/
+/*.servani3 {*/
 /*    animation-delay: 0.2s*/
 /*}*/
 /* 이거 딜레이 적용이 안되는데 방법을 좀 알아봐야할듯 함 */
 
 
-/* sec6 IA 정보구조도 부분 css */
+/* sec6 ia 정보구조도 부분 css */
 
 #container4 {
     display: flex;
@@ -644,7 +669,7 @@ li{
 
 #container6 {
     display: flex;
-    margin-bottom: 300px;
+    margin-bottom: -130px;
     gap: 60px;
 }
 
@@ -668,7 +693,7 @@ li{
 
 .des-s2 img{
     scale: 0.8;
-    
+
 }
 
 /* 수빈 끝 */
@@ -732,7 +757,7 @@ li{
     color: white;
     align-content: center;
     text-align: center;
-    background-color: #FF577C;
+    background-color: #ff577c;
     border-radius: 50%;
     float: right;
     margin: 125px 0 20px 0;
@@ -846,7 +871,7 @@ li{
     margin-left: 100px;
     margin-bottom: 20px;
     line-height: 1.6rem;
-    color: #2C2C2C;
+    color: #2c2c2c;
 }
 
 #sec13 {
@@ -860,7 +885,7 @@ li{
     margin-top: 250px;
     width: 100vw;
     height: 2800px;
-    background: linear-gradient(to bottom, #FF577C, #66B8FB); /* 그라데이션 색상 */
+    background: linear-gradient(to bottom, #ff577c, #66b8fb); /* 그라데이션 색상 */
     border-top-right-radius: 600px; /* 오른쪽 위 border-radius */
     border-top-left-radius: 0; /* 왼쪽 위는 radius 없음 */
     z-index: 1; /* 맨 뒤에 위치하게 설정 */
@@ -871,12 +896,12 @@ li{
     position: absolute;
     left: 50%;
     bottom: -100px; /* 아래쪽 위치 조정 */
-    transform: translateX(-50%); /* 가운데 정렬 */
+    transform: translatex(-50%); /* 가운데 정렬 */
     width: 0;
     height: 0;
     border-left: 80px solid transparent; /* 역삼각형 왼쪽 */
     border-right: 80px solid transparent; /* 역삼각형 오른쪽 */
-    border-top: 100px solid #66B8FB; /* 역삼각형 색상 */
+    border-top: 100px solid #66b8fb; /* 역삼각형 색상 */
 }
 
 .s13-svg1{
@@ -951,7 +976,7 @@ li{
     z-index: 2;
 }
 
-.sec13-TBox {
+.sec13-tbox {
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -960,7 +985,7 @@ li{
     left: 43%;
 }
 
-.sec13-TBox1 {
+.sec13-tbox1 {
     margin: 0 60px 0 0;
 }
 
@@ -984,7 +1009,6 @@ li{
 /* 여기까지 경륜 css 1031
    수진 1101 수정 */
 
-
 #sec14{
     position: relative;
     height: 2000px;
@@ -1003,7 +1027,7 @@ li{
     }
 
 .s14-2{
-    color: #FF577C;
+    color: #ff577c;
     font-weight: 500;
     font-size: 35px;
     margin-bottom: 20px;
@@ -1012,7 +1036,7 @@ li{
 .s14-3{
     font-size: 18px;
     line-height: 1.6rem;
-    color: #2C2C2C;
+    color: #2c2c2c;
 }
 
 .dl-svg-box1 img{
@@ -1145,32 +1169,32 @@ li{
     line-height: 1.4;
 }
 
-.sec17-TBox1{
+.sec17-tbox1{
     position: absolute;
     top: 9.4%;
     left: 120%;
 }
 
-.sec17-TBox2{
+.sec17-tbox2{
     position: absolute;
     top: 46%;
     left: 88%;
 }
 
-.sec17-TBox3{
+.sec17-tbox3{
     position: absolute;
     top: 46.6%;
     left: 88%;
 }
 
 
-.anaP-box{
+.anap-box{
     position: relative;
     top: 55%;
 }
 
 
-.sec17-TBox4{
+.sec17-tbox4{
     position: relative;
     left: 37%;
     top: 5%;
