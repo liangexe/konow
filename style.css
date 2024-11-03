@@ -1282,14 +1282,13 @@ li{
 
 /* footer */
 
-footer{
+footer {
     width: 100vw;
     height: 400px;
     font-size: 20px;
-}
-
-table{
-    margin: 30px 0 0 100px;
+    background: #fff;
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 .footer-p1{
@@ -1303,17 +1302,23 @@ table{
     font-weight: 500;
 }
 
-td{
-    width: 300px;
-}
-
-th{
+table {
+    margin: 30px 0 0 98px;
     text-align: left;
-    font-weight: 500;
 }
 
-tr{
-    height: 55px;
+td {
+    width: 280px;
+}
+
+tr {
+    height: 40px;
+}
+
+th {
+    /* margin-left: 0; */
+    /* text-align: left; */
+    font-weight: 500;
 }
 
 .trName{
