@@ -1217,41 +1217,17 @@ li{
 }
 
 #sec17{
-    height: 3200px;
+    height: 3500px;
     position: relative;
 }
 
 .ana1-box{
     position: absolute;
-    left: 24%;
-    top: 10%;
+    left: 15%;
+    top: 12%;
     display: flex;
     flex-direction: row;
     z-index: 2;
-}
-
-.ana2-box{
-    position: absolute;
-    left: 49%;
-    top: 29%;
-    display: flex;
-    flex-direction: row;
-    z-index: 2;
-}
-
-.ana3-box{
-    position: absolute;
-    left: 49%;
-    top: 41%;
-    display: flex;
-    flex-direction: row;
-    z-index: 2;
-}
-
-.ana-svg2{
-    position: absolute;
-    left: 110.5%;
-    top: 10%;
 }
 
 .sec17-p1{
@@ -1269,49 +1245,73 @@ li{
     line-height: 1.8;
 }
 
-.sec17-TBox1{
-    position: absolute;
-    top: 9%;
-    left: 135%;
+
+.ana-st1{
+    margin-bottom: 330px;
 }
 
-.sec17-TBox2{
+.ana-st1:nth-child(3){
     position: absolute;
-    top: -100%;
-    left: 74.5%;
+    top: 93%;
 }
 
-.sec17-TBox3{
+.sec17-T1{
     position: absolute;
-    top: -100%;
-    left: 74.5%;
+    top: 8%;
+    left: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
+.sec17-T2{
+    position: absolute;
+    top: 2%;
+    left: -5%;
+}
+
+.sec17-T3{
+    position: absolute;
+    display: flex;
+    left: 30%;
+    top: 62%;
+}
 
 .anaP-box{
     position: relative;
-    top: 50.5%;
-    left: 10%;
+    top: 55%;
+    left: 40%;
+    width: 1040px;
+    height: 1200px;
 }
 
-
-.sec17-TBox4{
-    position: relative;
-    left: 37%;
-    top: 5%;
-}
-
-.ana-svg7{
-    position: relative;
-    width: 400px;
-    left: 42%;
-    top: 50%;
-}
-
-.ana-svg8{
+.ana-svg3{
     position: absolute;
-    left: 43.7%;
-    top: 38%;
+    top: 20%;
+}
+
+.ana-svg4{
+    position: absolute;
+    top: 37%;
+    left: 3%;
+}
+
+.ana-svg5{
+    position: absolute;
+    margin: 110px 0 0 90px;
+}
+
+.ana-st2{
+    margin: 100px 0 0 180px;
+}
+
+.aline{
+    display: flex;
+    flex-direction: column;
+    margin: 150px 0 0 10px;
+}
+
+.aline img{
+    margin-bottom: 455px;
 }
 
 #sec18{
