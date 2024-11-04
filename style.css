@@ -583,15 +583,15 @@ a{
 /* 왼쪽 외국인 프로필 */
 .left-pro1 {
     position: absolute;
-    left: 50px;
-    top: 100px;
+    left: 80px;
+    top: 120px;
     width: 200px;
 }
 
 .left-pro2 {
     position: absolute;
-    left: 90px;
-    top: 600px;
+    left: 80px;
+    top: 700px;
     width: 250px;
 }
 
@@ -633,7 +633,6 @@ a{
 
 .us-svg2.up {
     margin: 25px;
-    height: 200px;
     float: left;
     transform: translatey(50px);
     opacity: 1;
