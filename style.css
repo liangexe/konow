@@ -1190,6 +1190,13 @@ a{
     left: 65.5%;
     top: 75.5%
 }
+
+.dl-svg4 {
+    position: absolute;
+    left: 83%;
+    top: 8%
+}
+
 .dl-svg-anime{
     animation: bounce 1s ease-in-out infinite alternate;
 }
