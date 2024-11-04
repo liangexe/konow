@@ -801,6 +801,7 @@ a{
     display: flex;
     position: absolute;
     top: 90%;
+    left: 10%
 }
 
 .st-circle{
@@ -857,7 +858,7 @@ a{
 .st-line2{
     position: absolute;
     top: 15%;
-    left: 1%;
+    left: -30%;
 }
 
 /* sec12 CHOOSE YOUR INTERESTS! 부분 */
