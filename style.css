@@ -825,14 +825,13 @@ a{
 .st-line1{
     position: absolute;
     top: 30.3%;
-    left: 40%;
+    left: 22%;
 }
 
 .st-box1{
     display: flex;
     position: absolute;
     top: 20%;
-    left: 21%;
 }
 
 .st-box{
