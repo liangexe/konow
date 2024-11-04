@@ -1124,7 +1124,12 @@ a{
     margin-bottom: 300px;
 }
 
-.sec14-text{
+.sec14-text1{
+    margin: 250px 0 145px 0;
+    text-align: center;
+}
+
+.sec14-text2 {
     margin: 250px 0 145px 0;
     text-align: center;
 }
