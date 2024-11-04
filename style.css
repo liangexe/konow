@@ -990,6 +990,7 @@ a{
 .sec13-p2{
     font-size: 18px;
     color: white;
+    line-height: 1.4;
 }
 
 .sm213 {
@@ -1117,6 +1118,7 @@ a{
     font-size: 20px;
     color: white;
     margin-bottom: 50px;
+    line-height: 1.4;
 }
 
 /* 여기까지 경륜 css 1031
