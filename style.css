@@ -978,10 +978,7 @@ a{
 }
 
 .sec13-p{
-    position: absolute;
-    left: 31%;
-    top: 24.5%;
-    z-index: 2;
+    margin-top: 180px;
 }
 
 .sec13-p1{
@@ -1004,7 +1001,7 @@ a{
     position: absolute;
     z-index: 2;
     left: -30%;
-    top: 350%;
+    top: 140%;
     display: flex;
     width: 920px;
     animation: up 0.7s cubic-bezier(0, 0, 0.38, 1.25) forwards;
