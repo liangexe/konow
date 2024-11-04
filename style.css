@@ -953,7 +953,7 @@ a{
     position: absolute;
     width: 420px;
     z-index: 3;
-    top: 9.2%;
+    top: 14.2%;
     left: 7.5%;
     border-radius: 70px;
 }
@@ -966,7 +966,7 @@ a{
 .s13-svg2{
     position: absolute;
     left: 31%;
-    top: 19.5%;
+    top: 24.5%;
     z-index: 2;
 }
 
@@ -974,6 +974,13 @@ a{
     position: absolute;
     left: 50%;
     top: 17.6%;
+    z-index: 2;
+}
+
+.sec13-p{
+    position: absolute;
+    left: 31%;
+    top: 24.5%;
     z-index: 2;
 }
 
