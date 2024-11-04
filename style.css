@@ -875,43 +875,44 @@ a{
 }
 
 #sec12 img{
-    width: 270px;
+    width: 320px;
 }
 
 .in-svg-box1{
     top: 15%;
-    left: 10%;
+    left: 5%;
 }
 
 .in-svg-box2{
-    top: 25%;
-    left: 30%;
+    top: 20%;
+    left: 29.5%;
 }
 
 .in-svg-box3{
-    top: 10%;
-    left: 50%;
+    top: 5%;
+    left: 54%;
 }
 
 .in-svg-box4{
     top: 30%;
-    left: 70%;
+    left: 78%;
 }
 
 .in-svg-box5{
-    top: 50%;
-    left: 10%;
+    top: 55%;
+    left: 5%;
 }
 
 .in-svg-box6{
     top: 60%;
-    left: 30%;
+    left: 29.5%;
 }
 
 .in-svg-box7{
     top: 45%;
-    left: 50%;
+    left: 54%;
 }
+
 
 /* in 부분 svg 애니메이션 추가 / 수빈 */
 .in-anime {
