@@ -1003,12 +1003,18 @@ li{
 }
 
 .sm213 {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.sm213.up {
     position: absolute;
     z-index: 2;
     left: -30%;
     top: 350%;
     display: flex;
     width: 920px;
+    animation: up 0.7s cubic-bezier(0, 0, 0.38, 1.25) forwards;
 }
 
 .sm-svg1, .sm-svg2, .sm-svg3 {
@@ -1016,17 +1022,24 @@ li{
     margin: 0 -58px;
 }
 
+.sm-svg1, .sm-svg3 {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
 /* z-index 설정 */
-.sm-svg1 {
+.sm-svg1.left {
     z-index: 3;
-    animation: left 0.5s ease-in-out forwards;
+    opacity: 0;
+    animation: left 0.5s 300ms ease-in-out forwards;
 }
 .sm-svg2 {
     z-index: 4;
 }
-.sm-svg3 {
+.sm-svg3.right {
     z-index: 3;
-    animation: right 0.5s ease-in-out forwards;
+    opacity: 0;
+    animation: right 0.5s 300ms ease-in-out forwards;
 }
 
 @keyframes left {
@@ -1051,28 +1064,52 @@ li{
     }
 }
 
-
 .sm-vid2{
     width: 420px;
     position: absolute;
     top: 63%;
     left: 10%;
-    z-index: 2;
+    z-index: 3;
     border-radius: 70px;
 }
 
-.sec13-TBox {
+.TBox-hidden {
+    width: 1000px;
+    height: 500px;
     position: absolute;
-    display: flex;
-    gap: 25px;
-    flex-direction: row;
-    z-index: 2;
     top: 74%;
-    left: 38%;
+    left: 28%;
+    overflow: hidden;
 }
 
-.sec13-Tbox1 {
-    margin: 0 60px 0 0;
+.sec13-TBox {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.sec13-TBox.found {
+    position: absolute;
+    display: flex;
+    gap: 85px;
+    flex-direction: row;
+    z-index: 2;
+    /* top: 74%; */
+    left: 18%;
+    animation: found 1s cubic-bezier(0, 0, 0.07, 0.97) forwards;
+}
+
+@keyframes found {
+    0% {
+        transform: translateX(-1500px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .sm-svg {
