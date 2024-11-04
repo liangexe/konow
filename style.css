@@ -1414,8 +1414,13 @@ table {
     text-align: left;
 }
 
+.table-padding {
+    padding-right: 80px;
+}
+
 td {
-    width: 280px;
+    width: auto;
+    padding-right: 50px;
 }
 
 tr {
