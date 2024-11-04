@@ -52,6 +52,10 @@ ul{
 
 li{
     padding: 0 72px; /*간격 20px->72px*/
+}
+
+a{
+    text-decoration: none;
     color: #313131;
     font-weight: 500;
     font-size: 24px;
@@ -91,18 +95,11 @@ li{
     height: 840px;
 }
 
-#sec2{
-    height: 840px;
-}
-
 /* #sec3 svg조정 때문에 주석처리 했습니다. / 수빈  */
+
 /* #sec3{
     height: 1400px;
 } */
-
-#plan-sec{
-    /*margin-top: 30px;*/
-}
 
 .p1{
     font-size: 24px;
@@ -131,60 +128,28 @@ li{
 
 #name{
     width: 100%;
-    height: 1080px;
-    /*min-height: 100vh;*/
     position: relative;
-    top: 270px;
+    height: 1000px;
+    top: 150px;
 }
 
-/*#name .p1{*/
-/*    margin-top: -250px;*/
-/*}*/
-
-.name{
+#text-animation {
+    margin-top: 150px;
+    font-size: 160px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #ff577c;
     text-align: center;
-    z-index: 2;
 }
 
-.name1{
-    font-size: 72px;
-    font-family: 'Pretendard', sans-serif;
-    font-weight: bold;
-    color: #ff577c;
-    animation: squeezeDown 2s ease forwards;
+#text-animation span {
+    display: inline-block;
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-.name2{
-    font-size: 195px;
-    font-family: 'Pretendard', sans-serif;
-    font-weight: bold;
-    color: #ff577c;
-    width: 100%;
-    animation: appearUp 1.5s ease forwards;
-}
-
-@keyframes squeezeDown {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-        letter-spacing: normal;
-    }
-    100% {
-        transform: scale(0.8) translateY(100px);
-        opacity: 0;
-        letter-spacing: -20px;
-    }
-}
-
-@keyframes appearUp {
-    0% {
-        opacity: 0;
-        letter-spacing: -20px;
-    }
-    100% {
-        opacity: 1;
-        letter-spacing: normal;
-    }
+.hidden {
+    opacity: 0;
+    transform: scale(0.8);
 }
 
 .name-p{
@@ -253,9 +218,21 @@ li{
 
 /* 수진 수정 시작 */
 
+#sec2{
+    height: 1000px;
+    position: relative;
+}
+
+.over-art{
+    position: absolute;
+    top: 7%;
+}
+
 .svg-con {
     position: absolute;
+    top: 20%;
     width: 95vw;
+    height: 900px;
     display: flex;
     flex-direction: column;
     animation: drop 1.1s ease-out forwards;
@@ -789,10 +766,23 @@ li{
 
 /* 수진 1101 온보딩부터 */
 
+#serv-sec{
+    position: relative;
+}
+
 #sec10{
     height: 1200px;
-    margin-bottom: 200px;
+    position: relative;
+}
 
+.sec10T{
+    position: absolute;
+    top: 1%;
+}
+
+.ob-gif{
+    position: absolute;
+    top: 17%;
 }
 
 #sec11{
@@ -854,10 +844,6 @@ li{
 .st-box img{
     margin-top: 30px;
     margin-left: 50%;
-}
-
-#serv-sec{
-    position: relative;
 }
 
 .s-bg{
@@ -1171,7 +1157,7 @@ li{
 }
 
 .dl-svg-box1 img{
-/*  scale: 0.8; */
+    /*  scale: 0.8; */
     height: 800px;
 }
 
