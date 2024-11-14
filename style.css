@@ -39,6 +39,33 @@ header {
     z-index: 1000;
 }
 
+.warn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #FF577C;
+    border-radius: 30px 30px 30px 5px;
+    top: 91%;
+    left: 2%;
+    z-index: 10;
+    transition: 1s ease;
+}
+
+.warn p{
+    color: white;
+    padding: 14px 0 0 17px;
+    opacity: 0;
+    font-size: 16.5px;
+}
+
+.warn p.opc{
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.warn.add{
+    width: 800px;
+}
 
 .h-svg{
     margin-left: 70px;
@@ -710,6 +737,10 @@ a{
     height: 1000px;
 }
 
+.des-s:nth-child(2){
+    margin-left: 20px;
+}
+
 .p4{
     font-size: 24px;
     font-weight: 700;
@@ -725,6 +756,7 @@ a{
 
 .des-box1 {
     opacity: 0;
+    margin: 85px 40px 0 46px;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -868,7 +900,8 @@ a{
     /*margin-bottom: 100px;*/
 }
 
-#sec12 div{
+#sec12 div
+{
     position: absolute;
     z-index: 15;
 }
